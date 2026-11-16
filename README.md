@@ -13,6 +13,7 @@ Each skill gets a short note about why I use it and what it changed in how my ag
 | [impeccable](https://github.com/pbakaus/impeccable) | plugin: 1 skill, 24 commands | active | third-party (Paul Bakaus) | Design, critique, audit and polish frontend UI (`/impeccable audit`, `/impeccable polish`, …) | Agent-built UIs tend to look generic; this gives the agent a design review pass and catches common anti-patterns before I see the result |
 | [figma](https://github.com/anthropics/claude-plugins-official) | plugin: MCP server + 16 skills | active | third-party (Figma) | Figma ↔ code: design to code, code to Figma, Code Connect, design systems | The agent reads the actual design (spacing, tokens, components) instead of guessing from a screenshot |
 | [playwright](https://github.com/anthropics/claude-plugins-official) | plugin: MCP server | active | third-party (Microsoft) | Browser automation: navigate, click, fill forms, screenshots | The agent checks its own UI changes in a real browser before telling me it's done |
+| [modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | plugin: 2 skills | trying | third-party (Google Chrome) | Current web platform practices: modern browser APIs, CSS layout, performance, accessibility, built-in AI APIs; plus Chrome extensions (Manifest V3) | Agents default to outdated web patterns from their training data; this steers them to current APIs |
 
 **Type:** `skill` = a skill folder in this repo · `plugin` = a Claude Code plugin installed from a marketplace (may bundle skills, commands and MCP servers)
 
@@ -56,6 +57,7 @@ claude plugin marketplace add pbakaus/impeccable
 claude plugin install impeccable@impeccable
 claude plugin install figma@claude-plugins-official
 claude plugin install playwright@claude-plugins-official
+claude plugin install modern-web-guidance@claude-plugins-official
 ```
 
 ## Adding a skill
