@@ -71,3 +71,7 @@ Copy-Item templates/skill skills/<skill-name> -Recurse
 - A skill should hold knowledge the model doesn't already have: a specific procedure, a non-obvious gotcha, a convention. Generic advice stays out.
 - The `description` decides when a skill triggers, so it gets the most care.
 - No client or employer specifics. Company-specific skills stay in a private location.
+
+## License
+
+[MIT](LICENSE) for my own skills (`skills/`), templates and scripts. Third-party plugins and skills keep their original licenses.
